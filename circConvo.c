@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-#define npt 6
+#define npt 6 //length of the sequence here
 
 void main(){
 
@@ -16,6 +16,8 @@ void main(){
 		h[npt+i] = h[i];
 	}
 	printf("\n");
+	
+	//Computation of circular convolution
 	for(n=0, shift=(npt-1);n<npt, shift>=0;n++, shift--){
 		y[n]=0;
 		for(i=0;i<npt;i++){
