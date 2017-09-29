@@ -1,5 +1,5 @@
-x = input("Enter the array X :\t");
-h = input("Enter the sequence H :\t");
+x = input('Enter the array X :\t');
+h = input('Enter the sequence H :\t');
 b = length(x)-1;
 n = [0:b];
 subplot(3,1,1);
@@ -19,7 +19,7 @@ for i = 1:1:len;
 m((len+1)-i,shift) = y(i+shift-1);
 end 
 end
-print("The matrix is:\n");
+print('The matrix is:\n');
 m
 x = transpose(x)
 convol=m*x;
